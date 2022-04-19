@@ -24,5 +24,9 @@ Just like reinforment learning, we are going to compare it to a real life thing.
 
 This is implemented through a setup, model and training program. The setup is where you define the constants and import the packages. The model is where you define all of the state dependent  values, everything changing and all the actions. This training program is where you run the agent within the enviroment. This is where it keeps track of the states and rewards. It is also the place where rewards are given. The training program computes the return at each step, the loss of both actor and critic, computes gradent and updates the parameters. 
 
-# How to Use Code
-For the code given, you link it to the tube serial port and run the program. It will automaticially enter training mode where it will try to move the ball to the set postition. After time, the ball should level out to the wanted postion. To change the height of the wanted position, edit the target parameter. 
+# How to Use Code and Whats Needs to be Done
+As of right now, the code does not currently work. What needs to be done is the enviorment and training alorgorithm needs to expanded upon to function properly. In addition, that the regular code, a training simulation can be set up. This allows you to train virtually before implementing it into the real world. This is beneficial because training takes a long time. 
+
+![image](https://user-images.githubusercontent.com/79153246/164037569-a5884617-07c8-4e49-a003-8dc50e5785ff.png)
+
+For the code given, you link it to the tube serial port and run the program. It will automaticially enter training mode where it will try to move the ball to the set postition. After time, the ball should level out to the wanted postion. There are a couple of things that you can change. The first thing that you can change is maximum height of the tube. To change this, you change the value of y_top. The second thing that you can change is the maximum PWM value. To change the MaxPWM variable. The final thing that you can change is the wanted position. To change the height of the wanted position, edit the target parameter. By changing these variable, you can customize it to any ball and pipe situation.  

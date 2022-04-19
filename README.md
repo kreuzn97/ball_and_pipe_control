@@ -24,6 +24,10 @@ Just like reinforment learning, we are going to compare it to a real life thing.
 
 This is implemented through a setup, model and training program. The setup is where you define the constants and import the packages. The model is where you define all of the state dependent  values, everything changing and all the actions. This training program is where you run the agent within the enviroment. This is where it keeps track of the states and rewards. It is also the place where rewards are given. The training program computes the return at each step, the loss of both actor and critic, computes gradent and updates the parameters. 
 
+The algorithm for one of the episodes that is done within the training program it dictated within the photo below. 
+
+![image](https://user-images.githubusercontent.com/79153246/164053350-26926103-bcfa-4b66-b51c-9fceeb5f918f.png)
+
 # How to Use Code and Whats Needs to be Done
 As of right now, the code does not currently work. What needs to be done is the enviorment and training alorgorithm needs to expanded upon to function properly. In addition, that the regular code, a training simulation can be set up. This allows you to train virtually before implementing it into the real world. This is beneficial because training takes a long time. 
 

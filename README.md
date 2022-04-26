@@ -33,4 +33,16 @@ As of right now, the code does not currently work. What needs to be done is the 
 
 ![image](https://user-images.githubusercontent.com/79153246/164037569-a5884617-07c8-4e49-a003-8dc50e5785ff.png)
 
-For the code given, you link it to the tube serial port and run the program. It will automaticially enter training mode where it will try to move the ball to the set postition. After time, the ball should level out to the wanted postion. There are a couple of things that you can change. The first thing that you can change is maximum height of the tube. To change this, you change the value of y_top. The second thing that you can change is the maximum PWM value. To change the MaxPWM variable. The final thing that you can change is the wanted position. To change the height of the wanted position, edit the target parameter. By changing these variable, you can customize it to any ball and pipe situation.  
+For the code given, you link it to the tube serial port and run the program. You want to verify in the device manager that the pipe is connected to COM5; if not check which port the pipe connects to and change the device declaration.
+
+![image](https://user-images.githubusercontent.com/98829812/165210563-6b1cac50-bc39-4ff2-9d1e-4209aba9f873.png)
+
+It will automaticially enter training mode where it will try to move the ball to the set postition. After time, the ball should level out to the wanted postion. There are a couple of things that you can change. The first thing that you can change is the maximum PWM value. To change the MaxPWM variable, edit the MaxPWM parameter
+
+![image](https://user-images.githubusercontent.com/98829812/165210855-7e6623e3-5ab2-4419-9f01-d6ffdef666df.png)
+
+The other thing that you can change is the wanted position. To change the height of the wanted position, edit the target parameter.
+
+![image](https://user-images.githubusercontent.com/98829812/165210686-2a52b76d-5048-42cc-b221-a1e5a63d0a59.png)
+
+By changing these variable, you can customize it to any ball and pipe situation. Then when you are ready to move the ball you would copy in the weights of the nodes which were gained from training the system. These would be saved along with the code files. The ball would then have risen to the desired height
